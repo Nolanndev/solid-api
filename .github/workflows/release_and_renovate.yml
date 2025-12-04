@@ -3,7 +3,7 @@ name: Release & Dependency Updates
 on:
     push:
         branches:
-            - main
+            - master
     workflow_dispatch:
     schedule:
         - cron: "0 2 * * 1"
