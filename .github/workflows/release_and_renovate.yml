@@ -25,11 +25,8 @@ jobs:
               uses: actions/setup-node@v4
               with:
                   node-version: "lts/*"
-                  registry-url: "https://registry.npmjs.org"
-
             - name: ⚙️ Install dependencies
-              run: npm clean-install
-
+              run: npm ci
             - name: 🏷️ Run semantic-release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
